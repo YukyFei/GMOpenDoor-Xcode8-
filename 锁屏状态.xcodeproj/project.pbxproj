@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		023F60FD1E2DF42600667E8C /* MsgPlaySound.m in Sources */ = {isa = PBXBuildFile; fileRef = 023F60FC1E2DF42600667E8C /* MsgPlaySound.m */; };
+		023F8DA01DD2C319002656D8 /* OpenDoorTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 023F8D9F1DD2C319002656D8 /* OpenDoorTool.m */; };
+		025390D41D6B159E00DDE244 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 025390D31D6B159E00DDE244 /* main.m */; };
+		025390D71D6B159E00DDE244 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 025390D61D6B159E00DDE244 /* AppDelegate.m */; };
+		025390DA1D6B159E00DDE244 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025390D91D6B159E00DDE244 /* ViewController.m */; };
+		025390DD1D6B159E00DDE244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 025390DB1D6B159E00DDE244 /* Main.storyboard */; };
+		025390DF1D6B159E00DDE244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025390DE1D6B159E00DDE244 /* Assets.xcassets */; };
+		025390E21D6B159E00DDE244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 025390E01D6B159E00DDE244 /* LaunchScreen.storyboard */; };
+		025390ED1D6B159F00DDE244 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 025390EC1D6B159F00DDE244 /* ____Tests.m */; };
+		025390F81D6B159F00DDE244 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 025390F71D6B159F00DDE244 /* ____UITests.m */; };
+		02939B981DC08DFA000C3CE0 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02939B971DC08DFA000C3CE0 /* CoreBluetooth.framework */; };
+		02939BA11DC09997000C3CE0 /* libBabyBluetooth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02939B9F1DC09974000C3CE0 /* libBabyBluetooth.a */; };
+		02CA38D01E1502F800A94D85 /* AccessDoor.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CA38CF1E1502F800A94D85 /* AccessDoor.m */; };
+		02CF00C91E0BBB4200A67FAB /* NearbyPeripheralInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CF00C81E0BBB4200A67FAB /* NearbyPeripheralInfo.m */; };
+		02DAB79D1DEC6A8C001D81ED /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DAB7941DEC6A8C001D81ED /* SVIndefiniteAnimatedView.m */; };
+		02DAB79E1DEC6A8C001D81ED /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DAB7961DEC6A8C001D81ED /* SVProgressAnimatedView.m */; };
+		02DAB79F1DEC6A8C001D81ED /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 02DAB7981DEC6A8C001D81ED /* SVProgressHUD.bundle */; };
+		02DAB7A01DEC6A8C001D81ED /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DAB79A1DEC6A8C001D81ED /* SVProgressHUD.m */; };
+		02DAB7A11DEC6A8C001D81ED /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DAB79C1DEC6A8C001D81ED /* SVRadialGradientLayer.m */; };
+		02DAB7A41DEC9A5C001D81ED /* BTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DAB7A31DEC9A5C001D81ED /* BTCell.m */; };
+		3FF5AF3E95F250E352D368C6 /* libPods-锁屏状态.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 265D7B864E53ECBFD82C5511 /* libPods-锁屏状态.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		025390E91D6B159F00DDE244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 025390C71D6B159E00DDE244 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 025390CE1D6B159E00DDE244;
+			remoteInfo = "锁屏状态";
+		};
+		025390F41D6B159F00DDE244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 025390C71D6B159E00DDE244 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 025390CE1D6B159E00DDE244;
+			remoteInfo = "锁屏状态";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		020196F41E1B88E000D2AAFE /* libIQKeyboardManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIQKeyboardManager.a; path = "../../../Library/Developer/Xcode/DerivedData/锁屏状态-awxunwfjsboinqdgdmfrpkrmrfiv/Build/Products/Debug-iphoneos/IQKeyboardManager/libIQKeyboardManager.a"; sourceTree = "<group>"; };
+		023F60FB1E2DF42600667E8C /* MsgPlaySound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MsgPlaySound.h; sourceTree = "<group>"; };
+		023F60FC1E2DF42600667E8C /* MsgPlaySound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MsgPlaySound.m; sourceTree = "<group>"; };
+		023F8D9E1DD2C319002656D8 /* OpenDoorTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenDoorTool.h; sourceTree = "<group>"; };
+		023F8D9F1DD2C319002656D8 /* OpenDoorTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenDoorTool.m; sourceTree = "<group>"; };
+		025390CF1D6B159E00DDE244 /* CloseScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloseScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		025390D31D6B159E00DDE244 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		025390D51D6B159E00DDE244 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		025390D61D6B159E00DDE244 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		025390D81D6B159E00DDE244 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		025390D91D6B159E00DDE244 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		025390DC1D6B159E00DDE244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		025390DE1D6B159E00DDE244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		025390E11D6B159E00DDE244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		025390E31D6B159E00DDE244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		025390E81D6B159F00DDE244 /* 锁屏状态Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "锁屏状态Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		025390EC1D6B159F00DDE244 /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		025390EE1D6B159F00DDE244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		025390F31D6B159F00DDE244 /* 锁屏状态UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "锁屏状态UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		025390F71D6B159F00DDE244 /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
+		025390F91D6B159F00DDE244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02939B971DC08DFA000C3CE0 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		02939B9B1DC0932D000C3CE0 /* project.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = project.a; sourceTree = "<group>"; };
+		02939B9D1DC098D4000C3CE0 /* libBabyBluetooth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBabyBluetooth.a; path = "../../../Library/Developer/Xcode/DerivedData/锁屏状态-fukovlaylacyujbvpnvxsuftpkhp/Build/Products/Debug-iphoneos/BabyBluetooth/libBabyBluetooth.a"; sourceTree = "<group>"; };
+		02939B9F1DC09974000C3CE0 /* libBabyBluetooth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBabyBluetooth.a; sourceTree = "<group>"; };
+		02CA38CE1E1502F800A94D85 /* AccessDoor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessDoor.h; sourceTree = "<group>"; };
+		02CA38CF1E1502F800A94D85 /* AccessDoor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessDoor.m; sourceTree = "<group>"; };
+		02CF00C71E0BBB4200A67FAB /* NearbyPeripheralInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearbyPeripheralInfo.h; sourceTree = "<group>"; };
+		02CF00C81E0BBB4200A67FAB /* NearbyPeripheralInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyPeripheralInfo.m; sourceTree = "<group>"; };
+		02DAB7931DEC6A8C001D81ED /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		02DAB7941DEC6A8C001D81ED /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		02DAB7951DEC6A8C001D81ED /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		02DAB7961DEC6A8C001D81ED /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		02DAB7971DEC6A8C001D81ED /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		02DAB7981DEC6A8C001D81ED /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		02DAB7991DEC6A8C001D81ED /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		02DAB79A1DEC6A8C001D81ED /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		02DAB79B1DEC6A8C001D81ED /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		02DAB79C1DEC6A8C001D81ED /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		02DAB7A21DEC9A5C001D81ED /* BTCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTCell.h; sourceTree = "<group>"; };
+		02DAB7A31DEC9A5C001D81ED /* BTCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCell.m; sourceTree = "<group>"; };
+		265D7B864E53ECBFD82C5511 /* libPods-锁屏状态.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-锁屏状态.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D4DC8664A3ECAEE0F81D320 /* Pods-锁屏状态.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-锁屏状态.debug.xcconfig"; path = "Pods/Target Support Files/Pods-锁屏状态/Pods-锁屏状态.debug.xcconfig"; sourceTree = "<group>"; };
+		A663FEDDBF573867AF333BB7 /* Pods-锁屏状态.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-锁屏状态.release.xcconfig"; path = "Pods/Target Support Files/Pods-锁屏状态/Pods-锁屏状态.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		025390CC1D6B159E00DDE244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02939BA11DC09997000C3CE0 /* libBabyBluetooth.a in Frameworks */,
+				02939B981DC08DFA000C3CE0 /* CoreBluetooth.framework in Frameworks */,
+				3FF5AF3E95F250E352D368C6 /* libPods-锁屏状态.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025390E51D6B159F00DDE244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025390F01D6B159F00DDE244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		025390C61D6B159E00DDE244 = {
+			isa = PBXGroup;
+			children = (
+				025390D11D6B159E00DDE244 /* 锁屏状态 */,
+				025390EB1D6B159F00DDE244 /* 锁屏状态Tests */,
+				025390F61D6B159F00DDE244 /* 锁屏状态UITests */,
+				025390D01D6B159E00DDE244 /* Products */,
+				572A1F8149DB0F27BF744322 /* Pods */,
+				F4B79C9CD53E67836A241897 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		025390D01D6B159E00DDE244 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				025390CF1D6B159E00DDE244 /* CloseScreen.app */,
+				025390E81D6B159F00DDE244 /* 锁屏状态Tests.xctest */,
+				025390F31D6B159F00DDE244 /* 锁屏状态UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		025390D11D6B159E00DDE244 /* 锁屏状态 */ = {
+			isa = PBXGroup;
+			children = (
+				02DAB7921DEC6A8C001D81ED /* SVProgressHUD */,
+				02939B9F1DC09974000C3CE0 /* libBabyBluetooth.a */,
+				023F8D9E1DD2C319002656D8 /* OpenDoorTool.h */,
+				023F8D9F1DD2C319002656D8 /* OpenDoorTool.m */,
+				02CA38CE1E1502F800A94D85 /* AccessDoor.h */,
+				02CA38CF1E1502F800A94D85 /* AccessDoor.m */,
+				025390D51D6B159E00DDE244 /* AppDelegate.h */,
+				025390D61D6B159E00DDE244 /* AppDelegate.m */,
+				023F60FB1E2DF42600667E8C /* MsgPlaySound.h */,
+				023F60FC1E2DF42600667E8C /* MsgPlaySound.m */,
+				025390D81D6B159E00DDE244 /* ViewController.h */,
+				025390D91D6B159E00DDE244 /* ViewController.m */,
+				02DAB7A21DEC9A5C001D81ED /* BTCell.h */,
+				02DAB7A31DEC9A5C001D81ED /* BTCell.m */,
+				02CF00C71E0BBB4200A67FAB /* NearbyPeripheralInfo.h */,
+				02CF00C81E0BBB4200A67FAB /* NearbyPeripheralInfo.m */,
+				025390DB1D6B159E00DDE244 /* Main.storyboard */,
+				025390DE1D6B159E00DDE244 /* Assets.xcassets */,
+				025390E01D6B159E00DDE244 /* LaunchScreen.storyboard */,
+				025390E31D6B159E00DDE244 /* Info.plist */,
+				025390D21D6B159E00DDE244 /* Supporting Files */,
+			);
+			path = "锁屏状态";
+			sourceTree = "<group>";
+		};
+		025390D21D6B159E00DDE244 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				025390D31D6B159E00DDE244 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		025390EB1D6B159F00DDE244 /* 锁屏状态Tests */ = {
+			isa = PBXGroup;
+			children = (
+				025390EC1D6B159F00DDE244 /* ____Tests.m */,
+				025390EE1D6B159F00DDE244 /* Info.plist */,
+			);
+			path = "锁屏状态Tests";
+			sourceTree = "<group>";
+		};
+		025390F61D6B159F00DDE244 /* 锁屏状态UITests */ = {
+			isa = PBXGroup;
+			children = (
+				025390F71D6B159F00DDE244 /* ____UITests.m */,
+				025390F91D6B159F00DDE244 /* Info.plist */,
+			);
+			path = "锁屏状态UITests";
+			sourceTree = "<group>";
+		};
+		02DAB7921DEC6A8C001D81ED /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				02DAB7931DEC6A8C001D81ED /* SVIndefiniteAnimatedView.h */,
+				02DAB7941DEC6A8C001D81ED /* SVIndefiniteAnimatedView.m */,
+				02DAB7951DEC6A8C001D81ED /* SVProgressAnimatedView.h */,
+				02DAB7961DEC6A8C001D81ED /* SVProgressAnimatedView.m */,
+				02DAB7971DEC6A8C001D81ED /* SVProgressHUD-Prefix.pch */,
+				02DAB7981DEC6A8C001D81ED /* SVProgressHUD.bundle */,
+				02DAB7991DEC6A8C001D81ED /* SVProgressHUD.h */,
+				02DAB79A1DEC6A8C001D81ED /* SVProgressHUD.m */,
+				02DAB79B1DEC6A8C001D81ED /* SVRadialGradientLayer.h */,
+				02DAB79C1DEC6A8C001D81ED /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		572A1F8149DB0F27BF744322 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D4DC8664A3ECAEE0F81D320 /* Pods-锁屏状态.debug.xcconfig */,
+				A663FEDDBF573867AF333BB7 /* Pods-锁屏状态.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4B79C9CD53E67836A241897 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				020196F41E1B88E000D2AAFE /* libIQKeyboardManager.a */,
+				02939B9D1DC098D4000C3CE0 /* libBabyBluetooth.a */,
+				02939B9B1DC0932D000C3CE0 /* project.a */,
+				02939B971DC08DFA000C3CE0 /* CoreBluetooth.framework */,
+				265D7B864E53ECBFD82C5511 /* libPods-锁屏状态.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		025390CE1D6B159E00DDE244 /* 锁屏状态 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025390FC1D6B159F00DDE244 /* Build configuration list for PBXNativeTarget "锁屏状态" */;
+			buildPhases = (
+				AB6747F7B64E39754EB8A08C /* [CP] Check Pods Manifest.lock */,
+				025390CB1D6B159E00DDE244 /* Sources */,
+				025390CC1D6B159E00DDE244 /* Frameworks */,
+				025390CD1D6B159E00DDE244 /* Resources */,
+				237883C5D3DE245E194B082A /* [CP] Embed Pods Frameworks */,
+				CF95676286C972F9DBE49DBD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "锁屏状态";
+			productName = "锁屏状态";
+			productReference = 025390CF1D6B159E00DDE244 /* CloseScreen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		025390E71D6B159F00DDE244 /* 锁屏状态Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025390FF1D6B159F00DDE244 /* Build configuration list for PBXNativeTarget "锁屏状态Tests" */;
+			buildPhases = (
+				025390E41D6B159F00DDE244 /* Sources */,
+				025390E51D6B159F00DDE244 /* Frameworks */,
+				025390E61D6B159F00DDE244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				025390EA1D6B159F00DDE244 /* PBXTargetDependency */,
+			);
+			name = "锁屏状态Tests";
+			productName = "锁屏状态Tests";
+			productReference = 025390E81D6B159F00DDE244 /* 锁屏状态Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		025390F21D6B159F00DDE244 /* 锁屏状态UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025391021D6B159F00DDE244 /* Build configuration list for PBXNativeTarget "锁屏状态UITests" */;
+			buildPhases = (
+				025390EF1D6B159F00DDE244 /* Sources */,
+				025390F01D6B159F00DDE244 /* Frameworks */,
+				025390F11D6B159F00DDE244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				025390F51D6B159F00DDE244 /* PBXTargetDependency */,
+			);
+			name = "锁屏状态UITests";
+			productName = "锁屏状态UITests";
+			productReference = 025390F31D6B159F00DDE244 /* 锁屏状态UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		025390C71D6B159E00DDE244 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = fyb;
+				TargetAttributes = {
+					025390CE1D6B159E00DDE244 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = S882P645WS;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					025390E71D6B159F00DDE244 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 025390CE1D6B159E00DDE244;
+					};
+					025390F21D6B159F00DDE244 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 025390CE1D6B159E00DDE244;
+					};
+				};
+			};
+			buildConfigurationList = 025390CA1D6B159E00DDE244 /* Build configuration list for PBXProject "锁屏状态" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 025390C61D6B159E00DDE244;
+			productRefGroup = 025390D01D6B159E00DDE244 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				025390CE1D6B159E00DDE244 /* 锁屏状态 */,
+				025390E71D6B159F00DDE244 /* 锁屏状态Tests */,
+				025390F21D6B159F00DDE244 /* 锁屏状态UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		025390CD1D6B159E00DDE244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025390E21D6B159E00DDE244 /* LaunchScreen.storyboard in Resources */,
+				025390DF1D6B159E00DDE244 /* Assets.xcassets in Resources */,
+				025390DD1D6B159E00DDE244 /* Main.storyboard in Resources */,
+				02DAB79F1DEC6A8C001D81ED /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025390E61D6B159F00DDE244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025390F11D6B159F00DDE244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		237883C5D3DE245E194B082A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-锁屏状态/Pods-锁屏状态-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB6747F7B64E39754EB8A08C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF95676286C972F9DBE49DBD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-锁屏状态/Pods-锁屏状态-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		025390CB1D6B159E00DDE244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DAB79D1DEC6A8C001D81ED /* SVIndefiniteAnimatedView.m in Sources */,
+				025390DA1D6B159E00DDE244 /* ViewController.m in Sources */,
+				023F8DA01DD2C319002656D8 /* OpenDoorTool.m in Sources */,
+				02DAB7A11DEC6A8C001D81ED /* SVRadialGradientLayer.m in Sources */,
+				02DAB7A01DEC6A8C001D81ED /* SVProgressHUD.m in Sources */,
+				02DAB7A41DEC9A5C001D81ED /* BTCell.m in Sources */,
+				023F60FD1E2DF42600667E8C /* MsgPlaySound.m in Sources */,
+				02CA38D01E1502F800A94D85 /* AccessDoor.m in Sources */,
+				025390D71D6B159E00DDE244 /* AppDelegate.m in Sources */,
+				025390D41D6B159E00DDE244 /* main.m in Sources */,
+				02CF00C91E0BBB4200A67FAB /* NearbyPeripheralInfo.m in Sources */,
+				02DAB79E1DEC6A8C001D81ED /* SVProgressAnimatedView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025390E41D6B159F00DDE244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025390ED1D6B159F00DDE244 /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		025390EF1D6B159F00DDE244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025390F81D6B159F00DDE244 /* ____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		025390EA1D6B159F00DDE244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 025390CE1D6B159E00DDE244 /* 锁屏状态 */;
+			targetProxy = 025390E91D6B159F00DDE244 /* PBXContainerItemProxy */;
+		};
+		025390F51D6B159F00DDE244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 025390CE1D6B159E00DDE244 /* 锁屏状态 */;
+			targetProxy = 025390F41D6B159F00DDE244 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		025390DB1D6B159E00DDE244 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				025390DC1D6B159E00DDE244 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		025390E01D6B159E00DDE244 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				025390E11D6B159E00DDE244 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		025390FA1D6B159F00DDE244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		025390FB1D6B159F00DDE244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		025390FD1D6B159F00DDE244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D4DC8664A3ECAEE0F81D320 /* Pods-锁屏状态.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "锁屏状态/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/锁屏状态",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = opendoor.dms;
+				PRODUCT_NAME = CloseScreen;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		025390FE1D6B159F00DDE244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A663FEDDBF573867AF333BB7 /* Pods-锁屏状态.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "锁屏状态/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/锁屏状态",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = opendoor.dms;
+				PRODUCT_NAME = CloseScreen;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		025391001D6B159F00DDE244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "锁屏状态Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dms.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/锁屏状态.app/锁屏状态";
+			};
+			name = Debug;
+		};
+		025391011D6B159F00DDE244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "锁屏状态Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dms.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/锁屏状态.app/锁屏状态";
+			};
+			name = Release;
+		};
+		025391031D6B159F00DDE244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "锁屏状态UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dms.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "锁屏状态";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		025391041D6B159F00DDE244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "锁屏状态UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dms.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "锁屏状态";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		025390CA1D6B159E00DDE244 /* Build configuration list for PBXProject "锁屏状态" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025390FA1D6B159F00DDE244 /* Debug */,
+				025390FB1D6B159F00DDE244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		025390FC1D6B159F00DDE244 /* Build configuration list for PBXNativeTarget "锁屏状态" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025390FD1D6B159F00DDE244 /* Debug */,
+				025390FE1D6B159F00DDE244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		025390FF1D6B159F00DDE244 /* Build configuration list for PBXNativeTarget "锁屏状态Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025391001D6B159F00DDE244 /* Debug */,
+				025391011D6B159F00DDE244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		025391021D6B159F00DDE244 /* Build configuration list for PBXNativeTarget "锁屏状态UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025391031D6B159F00DDE244 /* Debug */,
+				025391041D6B159F00DDE244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 025390C71D6B159E00DDE244 /* Project object */;
+}
