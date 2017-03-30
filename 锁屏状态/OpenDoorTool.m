@@ -282,14 +282,17 @@ static BOOL isScreenLocked; //屏幕是否锁屏
 - (void)enableLocaitonService
 {
     BOOL enable=[CLLocationManager locationServicesEnabled]; //定位服务是否可用
-    
-    int status=[CLLocationManager authorizationStatus];// 返回当前的定位授权状态
-    
-    if(!enable || status<3){
+    if (!enable) {
         
-        [_locationMgr requestAlwaysAuthorization];  //请求权限，注意和info.plist NSLocationAlwaysUsageDescription文件中的对应
+        NSLog(@"定位服务当前可能未打开，请设置打开");
     }
     
+    int status=[CLLocationManager authorizationStatus];// 返回当前的定位授权状态
+    if (status < 3 || !enable) {
+        
+        [self.locationMgr requestAlwaysAuthorization];
+    }
+
 }
 
 // 开始扫描ibeacon
@@ -297,29 +300,6 @@ static BOOL isScreenLocked; //屏幕是否锁屏
 {
     if ([CLLocationManager isMonitoringAvailableForClass:[CLBeaconRegion class]])
     {
-//        // 如果用户授权了监控
-//        if (self.isAccreditedBeaconRegion) {
-//            
-//            if (self.mBeaconRegions.count) {
-//                
-//                self.isMonitoringBeaconRegion = YES;
-//                for (CLBeaconRegion * region in self.mBeaconRegions) {
-//                    
-//                    [self startMonitorForRegion:region];
-//                }
-//            }
-//            else
-//            {
-//                self.isMonitoringBeaconRegion = NO;
-//                //NSLog(@"还没有定义要监控的beaconRegion");
-//            }
-        
-        
-//        }
-//        else
-//        {
-//            [SVProgressHUD showErrorWithStatus:@"没有授权监控ibeacon"];
-//        }
         [self startMonitorForRegion:nil];
         
     }
@@ -511,6 +491,7 @@ static BOOL isScreenLocked; //屏幕是否锁屏
     //NSLog(@"CLAuthorizationStatus:%d",status);
     
 #warning 只有用户定位始终开启可用，需优化
+    /*
     if (status == kCLAuthorizationStatusAuthorizedAlways) {
         
         //切换状态后，开始监控ibeacon区域
@@ -518,10 +499,20 @@ static BOOL isScreenLocked; //屏幕是否锁屏
 //        [self startMonitorForRegion:self.beaconRegion];
         
     }
-    else
+    else if(status == kCLAuthorizationStatusAuthorizedWhenInUse)
     {
         //NSLog(@"定位服务未开启！");
         [_locationMgr requestAlwaysAuthorization];
+    }
+     */
+    if (status == kCLAuthorizationStatusAuthorizedWhenInUse) {
+        
+        [self stopMonitorForRegion:nil];
+        for (CLBeaconRegion * tmpBeaconRegion in self.mBeaconRegions) {
+            
+            [self.locationMgr startRangingBeaconsInRegion:tmpBeaconRegion];
+        }
+        
     }
 }
 
@@ -532,12 +523,6 @@ static BOOL isScreenLocked; //屏幕是否锁屏
 
 - (void)locationManager:(CLLocationManager *)manager didDetermineState:(CLRegionState)state forRegion:(CLRegion *)region
 {
-    /*
-     CLRegionStateUnknown,
-     CLRegionStateInside,
-     CLRegionStateOutside
-     */
-    
     self.regionState = state;
     switch (state) {
         case CLRegionStateUnknown:
@@ -546,12 +531,6 @@ static BOOL isScreenLocked; //屏幕是否锁屏
         case CLRegionStateInside:
         {
             NSLog(@"CLRegionStateInside");
-            
-            // 已经扫描到的区域包含要扫描的区域，不在重新开始扫描
-//            if ([self.scanedBeaconArray containsObject:region]) {
-//                
-//                break;
-//            }[self.scanBeaconArray containsObject:region] &&
             if([CLLocationManager isRangingAvailable])
             {
                 [self.locationMgr startRangingBeaconsInRegion:(CLBeaconRegion *)region]; //专门用来开始监控ibeacon的
@@ -718,7 +697,7 @@ static bool setScreenStateCb()
 #warning 此处报错
 - (void)locationManager:(CLLocationManager *)manager monitoringDidFailForRegion:(CLRegion *)region withError:(NSError *)error {
     
-//    NSLog(@"%@--error:%@",NSStringFromSelector(_cmd),error);
+    NSLog(@"%@--error:%@",NSStringFromSelector(_cmd),error);
 //    
 //    if ([self.delegate respondsToSelector:@selector(openDoorTool:didRangingBeaconFailed:)]) {
 //        
@@ -729,7 +708,7 @@ static bool setScreenStateCb()
 //ragineBeacon失败
 - (void)locationManager:(CLLocationManager *)manager rangingBeaconsDidFailForRegion:(CLBeaconRegion *)region withError:(NSError *)error
 {
-    //NSLog(@"%@--error:%@",NSStringFromSelector(_cmd),error);
+    NSLog(@"%@--error:%@",NSStringFromSelector(_cmd),error);
     
 //    if ([self.delegate respondsToSelector:@selector(openDoorTool:didRangingBeaconFailed:)]) {
 //        
@@ -739,7 +718,7 @@ static bool setScreenStateCb()
 
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
-    //NSLog(@"Location manager failed: %@", error);
+    NSLog(@"Location manager failed: %@", error);
 }
 
 
